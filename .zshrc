@@ -15,7 +15,7 @@ export ZSH="/home/dev/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="powerlevel10k/powerlevel10k"
+ZSH_THEME="devjosh"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -122,6 +122,13 @@ source $ZSH/oh-my-zsh.sh
 
 # Alias mis
 alias c="code"
+alias gs="git status"
+alias ga="git add"
+alias gaa="git add -A"
+alias gc="git commit"
+alias gcm="git commit -m"
+alias gp="git push"
+alias gpo="git push origin"
 alias zconf="vim ~/.zshrc; source ~/.zshrc"
 mkcd() { 
 	mkdir $1; 
@@ -130,7 +137,7 @@ mkcd() {
 
 # Alias Global
 
-alias update="piku"
+alias update="yayu"
 
 # Alias Pacman
 
@@ -141,10 +148,10 @@ alias pacr="sudo pacman -Rcn "
 
 # Alias Pikaur
 
-alias piks="pikaur -Ss "
-alias piku="pikaur -Syu"
-alias piki="pikaur -S "
-alias pikr="pikaur -Rcn "
+alias yays="yay -Ss "
+alias yayu="yay -Syu"
+alias yayi="yay -S "
+alias yayr="yay -Rcn "
 
 # Custom build and run
 alias py="python"
@@ -178,3 +185,4 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 #source ~/powerlevel10k/powerlevel10k.zsh-theme
+source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
