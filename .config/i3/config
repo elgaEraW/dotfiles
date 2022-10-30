@@ -191,3 +191,5 @@ bar {
 
 bindsym XF86MonBrightnessUp exec --no-startup-id light -A 1 # increase screen brightness
 bindsym XF86MonBrightnessDown exec --no-startup-id light -U 1 # decrease screen brightness
+bindsym XF86AudioPlay exec banshee --toggle-playing
+bindsym Print exec scrot -e 'mv $f ~/Pictures/Screenshots/$f'

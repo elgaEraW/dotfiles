@@ -128,6 +128,16 @@ mkcd() {
 # Alias Global
 
 alias update="yayu"
+alias vim="nvim"
+
+dotfiles_sync() {
+    cp ~/.config ~/dotfiles/ -r;
+    cp ~/.zshrc ~/dotfiles/;
+    cd ~/dotfiles;
+    gaa;
+    EDITOR=vim gc;
+    gp;
+}
 
 # Alias Pacman
 
