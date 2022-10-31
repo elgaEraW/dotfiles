@@ -127,6 +127,9 @@ mkcd() {
 
 # Alias Global
 
+clean() {
+    sudo pacman -Rns $(pacman -Qtdq);
+}
 alias update="yayu"
 alias vim="nvim"
 
