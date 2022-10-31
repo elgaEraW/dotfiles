@@ -4,6 +4,7 @@
   [[default]]
     font = Anonymous Pro 18
     foreground_color = "#00ff00"
+    show_titlebar = False
     scrollback_infinite = True
     use_system_font = False
 [layouts]

@@ -133,6 +133,7 @@ alias vim="nvim"
 dotfiles_sync() {
     cp ~/.config ~/dotfiles/ -r;
     cp ~/.zshrc ~/dotfiles/;
+    cp ~/.fonts ~/dotfiles/;
     cd ~/dotfiles;
     gaa;
     EDITOR=vim gc;
