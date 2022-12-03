@@ -1,12 +1,11 @@
 [global_config]
-  borderless = True
 [keybindings]
 [profiles]
   [[default]]
+    background_type = transparent
     font = Anonymous Pro 18
     foreground_color = "#00ff00"
-    show_titlebar = False
-    scrollback_infinite = True
+    palette = "#000000:#cd0000:#00cd00:#cdcd00:#0000ee:#cd00cd:#00cdcd:#e5e5e5:#7f7f7f:#ff0000:#00ff00:#ffff00:#5c5cff:#ff00ff:#00ffff:#ffffff"
     use_system_font = False
 [layouts]
   [[default]]
@@ -16,5 +15,4 @@
     [[[child1]]]
       type = Terminal
       parent = window0
-      profile = default
 [plugins]

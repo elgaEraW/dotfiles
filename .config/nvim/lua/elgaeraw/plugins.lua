@@ -47,7 +47,7 @@ return require('packer').startup(function(use)
   }
 
   -- You can specify multiple plugins in a single call
-  use {'tjdevries/colorbuddy.vim', {'nvim-treesitter/nvim-treesitter', opt = true}}
+  use {'tjdevries/colorbuddy.vim'}
 
   -- You can alias plugin names
   use {'dracula/vim', as = 'dracula'}
