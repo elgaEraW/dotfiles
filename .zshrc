@@ -173,4 +173,12 @@ jr() {
 	java -cp ./build $filename;
 }
 
+asr() {
+    filename="$(echo $1 | cut -d '.' -f1)"
+    nasm -f elf32 -o $filename.o $1;
+    ld -m elf_i386 -o $filename $filename.o;
+    ./$filename;
+    rm $filename $filename.o;
+}
+
 fortune | cowsay -f tux
