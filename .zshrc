@@ -131,7 +131,7 @@ clean() {
     sudo pacman -Rns $(pacman -Qtdq);
 }
 alias update="yayu"
-alias vim="nvim"
+# alias vim="nvim"
 
 dotfiles_sync() {
     cp ~/.config ~/dotfiles/ -r;
