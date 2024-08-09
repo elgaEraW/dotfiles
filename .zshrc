@@ -126,12 +126,20 @@ mkcd() {
 };
 
 # Alias Global
+alias pwn="ssh hacker@pwn.college"
 
 clean() {
-    sudo pacman -Rns $(pacman -Qtdq);
+	sudo dnf autoremove
 }
-alias update="yayu"
+alias update="dnfu"
 # alias vim="nvim"
+
+# Rust
+alias cb="cargo build"
+alias cr="cargo run"
+alias cc="cargo check"
+alias cl="cargo clean"
+alias ct="cargo test"
 
 dotfiles_sync() {
     cp ~/.config ~/dotfiles/ -r;
@@ -145,21 +153,17 @@ dotfiles_sync() {
 
 # Alias Pacman
 
-alias pacs="pacman -Ss "
-alias pacu="sudo pacman -Syu"
-alias paci="sudo pacman -S "
-alias pacr="sudo pacman -Rcn "
-
-# Alias Pikaur
-
-alias yays="yay -Ss "
-alias yayu="yay -Syu"
-alias yayi="yay -S "
-alias yayr="yay -Rcn "
+alias dnfs="dnf search"
+alias dnfu="sudo dnf update"
+alias dnfi="sudo dnf install"
+alias dnfr="sudo dnf remove"
 
 # Custom build and run
 alias py="python"
 # alias cpr="f() { echo g++ $1.cpp -o $1 && ./$1 };f"
+
+# Alias VPN connection
+alias vpn="sudo /home/elgaeraw/Code/rust/vpn/target/release/vpn"
 
 cpr() {
 	filename="$(echo $1 | cut -d'.' -f1)"
