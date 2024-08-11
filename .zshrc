@@ -131,7 +131,7 @@ alias pwn="ssh hacker@pwn.college"
 clean() {
 	sudo dnf autoremove
 }
-alias update="dnfu"
+alias update="zref && zu"
 # alias vim="nvim"
 
 # Rust
@@ -151,12 +151,22 @@ dotfiles_sync() {
     gp;
 }
 
-# Alias Pacman
+# Alias dnf
 
-alias dnfs="dnf search"
-alias dnfu="sudo dnf update"
-alias dnfi="sudo dnf install"
-alias dnfr="sudo dnf remove"
+# alias dnfs="dnf search"
+# alias dnfu="sudo dnf update"
+# alias dnfi="sudo dnf install"
+# alias dnfr="sudo dnf remove"
+#
+#
+# Alias zypper
+alias zs="zypper search"
+alias zu="sudo zypper up"
+alias zi="sudo zypper in"
+alias zr="sudo zypper rm -u"
+alias zref="sudo zypper ref"
+alias zp="sudo zypper patch"
+alias z="sudo zypper"
 
 # Custom build and run
 alias py="python"
