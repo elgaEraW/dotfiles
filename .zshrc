@@ -175,6 +175,9 @@ alias py="python"
 # Alias VPN connection
 alias vpn="sudo /home/elgaeraw/Code/rust/vpn/target/release/vpn"
 
+# Alias for rsync
+alias rsync-local-repos="sudo rsync -rlptvh rsync.opensuse.org::opensuse-full-with-factory /srv/local-repos --stats --progress --exclude-from=/srv/local-repos/excludelist"
+
 cpr() {
 	filename="$(echo $1 | cut -d'.' -f1)"
 	g++ $1 -o ./build/$filename;

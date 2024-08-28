@@ -1,0 +1,14 @@
+opensuse/distribution
+opensuse/factory
+opensuse/slowroll
+opensuse/tumbleweed/appliances
+opensuse/tumbleweed/iso
+opensuse/tumbleweed/jeos
+opensuse/update/leap
+opensuse/update/leap-micro
+opensuse/update/leap-micro-current
+opensuse/update/openSUSE-current
+opensuse/update/openSUSE-non-oss-current
+opensuse/update/openSUSE-stable
+opensuse/update/slowroll
+
