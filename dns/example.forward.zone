@@ -1,0 +1,9 @@
+$TTL 1D
+ette.biz.	IN	SOA	ette.biz.	root.ette.biz. (
+										0	;
+										1D	;
+										1H	;
+										1W	;
+										2H )	;
+@		IN 	NS	ette.biz.
+@	IN	A	192.168.25.132

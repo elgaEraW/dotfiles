@@ -1,0 +1,9 @@
+$TTL 1D
+@		IN	SOA	ette.biz.	root.ette.biz. (
+											0	;
+											1D	;	
+											1H	;
+											1W	;
+											3H )
+		IN 	NS	ette.biz.
+@		IN	PTR	ette.biz.

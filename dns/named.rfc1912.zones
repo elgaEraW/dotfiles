@@ -1,0 +1,10 @@
+zone "ette.biz" IN { type master;
+  file "/var/named/example.forward.zone";
+  allow-update { none; };
+};
+
+zone "25.168.192.in-addr.arpa" IN { 
+   type master;
+   file "/var/named/example.reverse.zone";
+   allow-update { none; };
+};
